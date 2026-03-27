@@ -13,10 +13,10 @@ if %errorLevel% neq 0 (
 
 Title LOBINHO - HWID CHECKER
 
-:: Adjust console buffer for scrolling
+
 powershell -Command "$h = Get-Host; $w = $h.UI.RawUI; $b = $w.BufferSize; $b.Width = 115; $b.Height = 9999; $w.BufferSize = $b;" >nul 2>&1
 
-:: Cyberpunk ANSI Colors
+
 set "C_TITLE=[38;5;45m"
 set "C_TEXT=[38;5;198m"
 set "C_ACCENT=[38;5;226m"
